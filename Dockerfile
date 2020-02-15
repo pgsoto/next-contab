@@ -6,8 +6,6 @@ WORKDIR /srv/app/next-client
 
 COPY package*.json /srv/app/next-client/
 
-RUN npm install -g nodemon
-
 RUN npm install --silent
 
 COPY . /srv/app/next-client
