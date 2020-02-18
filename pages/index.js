@@ -1,12 +1,14 @@
-import Link from 'next/link';
+import React from 'react';
+import Head from 'next/head'
+import App from './_app'
 
-export default function Index() {
-  return (
-    <div>
-      <Link href="/about">
-        <a>About Page</a>
-      </Link>
-      <p>Hello Next.js</p>
-    </div>
-  );
-}
+const Index = () => (
+    <>
+      <Head>
+        <title>Agenda contable</title>
+      </Head>
+      <App />
+    </>
+)
+
+export default Index
